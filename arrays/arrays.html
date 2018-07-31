@@ -10,6 +10,24 @@
 
     <script>
 // your code goes here
+
+/*
+	var number_1 = prompt("whats the 1st thing you are excited about in meet??")
+    
+	var number_2 = prompt("whats the 2nd thing you are excited about in meet??")
+
+	var number_3 = prompt("whats the 3rd thing you are excited about in meet??")
+	var excited = []
+	excited.push(number_1)
+	excited.push(number_2)
+	excited.push(number_3)
+	alert(excited)
+	*/
+	var number_1 = prompt("whats are the things you are excited about in meet??(write 3 things separated by , ")
+	var number = number_1.split(", ")
+	number.sort()
+	var sortednum = number.join(", ")
+	document.write(sortednum)
     </script>
 </body>
 
