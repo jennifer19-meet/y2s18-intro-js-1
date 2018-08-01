@@ -10,10 +10,34 @@
 
     <script>
 /* Checks if a character is a letter */
-function isLetter(char) {
-    char = char.toLowerCase();
-    return "abcdefghijklmnopqrstuvwxyz".indexOf(char) >= 0;
+oneway=[];
+otherway =[];
+phrase = prompt("Please write a phrase");
+
+for (var i= 0; i<phrase.length; ++i){
+	if (phrase[i]!= " " || phrase[i]=="'" || phrase[i]==","){
+		oneway.push(phrase[i]);
+	}
 }
+
+
+otherway = oneway.reverse();
+
+oneway.reverse();
+for (var u = 0; u< otherway.length; ++u){
+	if (otherway[u] == oneway[u]){
+		if (u == otherway.length){
+			document.write("Trueee")
+		}
+	}
+ 	else{
+		document.write("Falseeee")
+		{break;}
+	}
+}
+
+
+// document.write(oneway);
 
 // Write your isPalindrome function here!
 
